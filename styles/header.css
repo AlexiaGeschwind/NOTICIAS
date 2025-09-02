@@ -1,0 +1,9 @@
+#primary{
+    padding-block: 20px;
+/*NESTING CSS*/
+div:nth-child(2){
+    margin-inline:auto;
+div:nth-child(3){
+    
+
+}
