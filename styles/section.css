@@ -1,10 +1,8 @@
-main {  
-    margin-top: 80px;
+main{
+  margin-top: 40px;
+  gap: 80px;
 }
 
-feature {
-    
-}
 section header{
   border-top: solid 1px var(--stroke-color) ;
   padding-block: 12px 24px;
@@ -28,38 +26,39 @@ section header{
 }
 
 
-#featured {
-    img {
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    figcaption {
-        position: absolute;
-        bottom: 0;
-        padding: 24px;
+#featured{
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .card{
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    figcaption{
+      position: absolute;
+      bottom: 0;
+      padding: 24px;
 
-        h2{
-            margin-top: 8px;;
-        }
-    }
-          &:has(.text-lg){
-          padding: 12px;
+      h2{
+        margin-top: 8px;
       }
-    .card{
-        position: relative;
-        border-radius: 4px;
-        overflow: hidden;
 
-        &:before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            top: 50%;
-            background: linear-gradient(180deg, transparent 0%, #020617 100%);
-        }
+      &:has(.text-lg){
+        padding: 12px;
+      }
     }
+
+    &:before{
+      content: "";
+      position: absolute;
+      inset: 0; 
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
+  }
 }
+
 #weekly{
   &>div{
     grid-template-columns:repeat(4, 1fr);
